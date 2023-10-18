@@ -5,11 +5,64 @@
 
 `sass --watch scss/index.scss:styles/index.css`
 
-**box-sizing: border-box**
+>[!IMPORTANT]
+>**box-sizing: border-box**
+
+## Containers
+
+To change padding edit `--getter-x` in `:root`
+    .
+    ├── ...
+    ├── scss                   
+    │   ├── common                
+    │       ├── common.scss             
+    └── ...
+
+
+### Sizes
+```
+@media (min-width: 320px) {
+  .container {
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (min-width: 425px) {
+  .container {
+    max-width: 420px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+```
+### Users padding
+
+
 
 ## Media breacpoints 
 
-@media breackpoints *mixin* uses _max-width_ property. (desctop design first)
+### Structure
+@media breackpoints *mixin* uses _max-width_ property. _desctop design first_
 ```
 breackpoints{
   "desctop":  1400px,
@@ -21,7 +74,7 @@ breackpoints{
 }
 ```
 
-*example:*
+### Uses
 ```
 
 @include mq(mobile-l) {
