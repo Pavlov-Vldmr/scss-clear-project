@@ -10,13 +10,16 @@
 
 ## Containers
 
-To change padding edit `--getter-x` in `:root`
-    .
-    ├── ...                        #
-    ├── scss                       #
-    │   ├── common                 #
-    │       ├── common.scss        #     
-    └── ...                        #
+To change padding edit `--getter-x` in `commoon.scss`
+.
+├───assets
+│   └───fonts
+├───scss
+│   ├───common `common.scss'
+│   └───layout
+│       └───main
+...
+
 
 
 ### Sizes
