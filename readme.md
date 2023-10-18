@@ -12,11 +12,11 @@
 
 To change padding edit `--getter-x` in `:root`
     .
-    ├── ...
-    ├── scss                   
-    │   ├── common                
-    │       ├── common.scss             
-    └── ...
+    ├── ...                        #
+    ├── scss                       #
+    │   ├── common                 #
+    │       ├── common.scss        #     
+    └── ...                        #
 
 
 ### Sizes
