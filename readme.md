@@ -6,9 +6,11 @@
 `sass --watch scss/index.scss:styles/index.css`
 
 >[!IMPORTANT]
->**box-sizing: border-box**
+>**box-sizing: border-box** model used
 
 ## Containers
+
+### Custom padding
 
 To change padding edit `--getter-x` in `commoon.scss`
 ```bash
@@ -20,7 +22,7 @@ To change padding edit `--getter-x` in `commoon.scss`
 └───...
 ```
 
-### Sizes
+### Container sizes
 ```
 @media (min-width: 320px) {
   .container {
@@ -56,7 +58,7 @@ To change padding edit `--getter-x` in `commoon.scss`
 }
 
 ```
-### Users padding
+
 
 
 
