@@ -1,3 +1,7 @@
+:root{
+  // --getter-x: 10px;
+}
+
 body {
   font-family: $default-font;
   color: $text-color;
@@ -29,12 +33,6 @@ body {
 
 // custom scrollbar END
 
-.container{
-  
-  max-width: 940px;
-  margin: auto;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -49,15 +47,23 @@ body {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  // padding-right: 0.75rem;
+  // padding-left: 0.75rem;
+  padding-right: var(--getter-x , 0.75rem);
+  padding-left: var(--getter-x , 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
-
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .container-sm, .container {
-    max-width: 540px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (min-width: 425px) {
+  .container-sm, .container {
+    max-width: 420px;
   }
 }
 @media (min-width: 768px) {
@@ -78,11 +84,5 @@ body {
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
-  }
-}
-
-@media (max-width: 769px) {
-  .container{
-    width: auto;
   }
 }

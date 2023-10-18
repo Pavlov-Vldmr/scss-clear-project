@@ -1,11 +1,28 @@
-@include mq(laptop) {
-  
+@include mq(desctop) {
 }
-
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+}
 @include mq(tablet) {
-  
+    .test-class{
+        .test{
+            background-color: rgb(117, 128, 0);
+        }
+    }
 }
-
-@include mq(mobile) {
-  
+@include mq(mobile-l) {
+    .test-class{
+        .test{
+            background-color: green;
+        }
+    }
+}
+@include mq(mobile-s) {
+    .test-class{
+        .test{
+            background-color: red;
+        }
+    }
+    
 }

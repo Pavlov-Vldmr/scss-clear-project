@@ -1,4 +1,9 @@
-.test{
-    border: 1px solid gray;
+.test-class {
+  background-color: rgb(152, 81, 219);
+
+  .test {
+    background-color: rgb(104, 99, 208);
+    border: 2px solid gray;
     margin-top: 20px;
+  }
 }

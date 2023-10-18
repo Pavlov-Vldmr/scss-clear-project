@@ -1,20 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: "bebasneuebold";
-  src: url("/assets/fonts/bebasneuebold.woff2");
+  src: url("../assets/fonts/bebasneuebold.woff2");
 }
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url("/assets/fonts/OpenSans-Bold.ttf");
+  src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url("/assets/fonts/OpenSans-Regular.ttf");
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 @font-face {
   font-family: "OpenSans-ExtraBold";
-  src: url("/assets/fonts/OpenSans-ExtraBold.ttf");
+  src: url("../assets/fonts/OpenSans-ExtraBold.ttf");
 }
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,11 +76,10 @@ body {
   font-size: 1rem;
 }
 
-.container {
-  max-width: 940px;
-  margin: auto;
-}
-
+/* width */
+/* Track */
+/* Handle */
+/* Handle on hover */
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -87,15 +93,21 @@ body {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--getter-x, 0.75rem);
+  padding-left: var(--getter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .container-sm, .container {
-    max-width: 540px;
+    width: auto;
+    max-width: none;
+  }
+}
+@media (min-width: 425px) {
+  .container-sm, .container {
+    max-width: 420px;
   }
 }
 @media (min-width: 768px) {
@@ -118,9 +130,29 @@ body {
     max-width: 1320px;
   }
 }
-.test {
-  border: 1px solid gray;
+.test-class {
+  background-color: rgb(152, 81, 219);
+}
+.test-class .test {
+  background-color: rgb(104, 99, 208);
+  border: 2px solid gray;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .test-class .test {
+    background-color: rgb(117, 128, 0);
+  }
+}
+@media (max-width: 425px) {
+  .test-class .test {
+    background-color: green;
+  }
+}
+@media (max-width: 375px) {
+  .test-class .test {
+    background-color: red;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

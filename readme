@@ -1,8 +1,0 @@
-sass --watch scss/index.scss:styles/index.css
-
-!! scss/common/fonts.scss in path need '..'
-  for example
-    @font-face {
-      font-family: "Roboto-Bold";
-      src: url("../assets/fonts/Roboto-Bold.ttf");
-    };
