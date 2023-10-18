@@ -11,16 +11,14 @@
 ## Containers
 
 To change padding edit `--getter-x` in `commoon.scss`
+```bash
 .
-├───assets
-│   └───fonts
+├───...
 ├───scss
-│   ├───common `common.scss'
-│   └───layout
-│       └───main
-...
-
-
+│   ├───common    # common.scss
+│   └───...    
+└───...
+```
 
 ### Sizes
 ```
