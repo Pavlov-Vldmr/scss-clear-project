@@ -5,8 +5,7 @@
 
 `sass --watch scss/index.scss:styles/index.css`
 
->[!IMPORTANT]
->**box-sizing: border-box** model used
+
 
 ## Containers
 
